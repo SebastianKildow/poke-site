@@ -1,7 +1,7 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	Oia Poke
+AUTHOR:		Sebastian Kildow-mefret
 ==============================================
 
 TABLE OF CONTENTS:
@@ -24,15 +24,40 @@ background: variables.$primary-color;
 */
 
 @use 'reset';
+@use 'variables';
+@use 'mixins';
 
-/* 1. Main Layout ================================= */
+/* Main Layout ================================= */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	
+  font-family: variables.$main-font;
+  font-size: 13px;
 }
 
-/* 2. Content ================================= */
+/* Type Layout ================================= */
+
+h1 {
+  font-family: variables.$h-font;
+  font-size: 43px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+/* Content ================================= */
