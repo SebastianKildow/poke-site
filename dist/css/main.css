@@ -154,6 +154,7 @@ table {
 }
 
 body {
+	scroll-behavior: smooth;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 13px;
 }
@@ -396,7 +397,7 @@ li {
 	.hero {
 		background-size: cover;
 		background-position: center;
-		padding-bottom: 25rem;
+		padding-bottom: 400px;
 	}
 	.hero__header {
 		font-size: 176px;
@@ -414,10 +415,10 @@ li {
 	display: grid;
 	grid-template-columns: 1fr repeat(12, 1fr) 1fr;
 	grid-template-rows: 1fr repeat(12, 1fr) 1fr;
-	height: 80vh;
-	width: 100vw;
 	color: #1b846f;
 	background: #febc32;
+	height: 80vh;
+	width: 100vw;
 	padding-bottom: 10px;
 	position: relative;
 }
@@ -490,7 +491,7 @@ li {
 	}
 	.about__text {
 		grid-column: 1 / span 2;
-		grid-row: 3 / span 4;
+		grid-row: 2 / span 4;
 		margin-left: 20px;
 	}
 	.about-btn {
@@ -560,7 +561,7 @@ li {
 	border-radius: 3%;
 	text-align: center;
 	grid-column: 2 / span 10;
-	grid-row: 2 / span 11;
+	grid-row: 2 / span 8;
 	margin-bottom: 20px;
 	position: relative;
 	padding-bottom: 10px;
