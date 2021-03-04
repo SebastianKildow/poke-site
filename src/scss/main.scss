@@ -34,14 +34,15 @@ background: variables.$primary-color;
 }
 
 body {
-  font-family: variables.$main-font;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
 }
 
 /* Type Layout ================================= */
 
 h1 {
-  font-family: variables.$h-font;
+  font-family: "Pacifico", cursive;
+
   font-size: 43px;
 }
 
@@ -58,6 +59,257 @@ h4 {
 }
 
 a {
+  color: unset;
   text-decoration: none;
 }
+
+li {
+  list-style-type: none;
+}
+
 /* Content ================================= */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+/* Nav ================================= */
+
+.order-btn {
+  background: #1b846f;
+  color: white;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__img {
+    background: url(../img/logo.png);
+    background-size: cover;
+    background-position: center;
+
+    width: 80px;
+    height: 176px;
+    margin-top: -8px;
+  }
+
+  &__caption {
+    margin-top: -28px;
+    text-transform: uppercase;
+    color: white;
+    transform: scale(1, 1.1);
+    line-height: 1.2;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav-holder {
+  display: none;
+
+  &_open {
+    display: flex;
+    background: #febc32;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 329.6px;
+    z-index: 3;
+  }
+
+  &__items {
+    display: flex;
+    margin: 16px 36px 0 0;
+    width: 524px;
+    justify-content: space-between;
+    color: #e8e6e6;
+
+    &_open {
+      flex-direction: column;
+      text-align: left;
+      margin: 44px 0 300% 32px;
+      color: black;
+      height: 288px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    padding: 16px;
+
+    &_active {
+    }
+
+    &:hover {
+    }
+  }
+}
+.nav-header {
+  display: flex;
+  position: relative;
+}
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  width: 28px;
+  height: 16px;
+  justify-content: space-between;
+  margin: 24px 16px 0 auto;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+
+  &__line {
+    width: 100%;
+    height: 3.2px;
+    background: white;
+  }
+}
+
+/* Hero ================================= */
+
+.hero {
+  background: url(../img/header_img.jpg);
+  background-position: bottom;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-size: 968px;
+  padding-bottom: 160px;
+  text-align: center;
+
+  &__header {
+    font-size: 43px;
+    width: 90%;
+    margin: 184px auto 24px;
+  }
+
+  &__sub {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1.425px;
+  }
+
+  &__caption {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+/* About ================================= */
+.about {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, 1fr) 1fr;
+  grid-template-rows: 1fr repeat(12, 1fr) 1fr;
+  height: 70vh;
+  width: 100vw;
+
+  color: #1b846f;
+  background: #febc32;
+
+  padding-bottom: 10px;
+  position: relative;
+
+  &__bg {
+    background-image: url(/src/img/main_img.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 11;
+    grid-row: 2 / span 10;
+
+    border: white solid 10px;
+  }
+
+  &__content {
+    background: white;
+    text-align: center;
+    grid-column: 3 / span 11;
+    grid-row: 3 / span 10;
+    position: relative;
+    line-height: 1.3;
+  }
+
+  &__header {
+    font-family: "Pacifico", cursive;
+  }
+
+  &__text {
+    line-height: 1.7;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}
+
+/* Gallery ================================= */
+
+.gallery {
+  &__holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: auto;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+/* Catering ================================= */
+
+.catering {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, 1fr) 1fr;
+  grid-template-rows: 1fr repeat(12, 1fr) 1fr;
+  height: 70vh;
+  width: 100vw;
+  /*bg*/
+  background-image: url(/src/img/catering_img.jpg);
+
+  color: #1b846f;
+  &__header {
+    font-family: "Pacifico", cursive;
+  }
+
+  &__text {
+    line-height: 1.7;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  &__content {
+    background: white;
+    border-radius: 6%;
+    text-align: center;
+    grid-column: 2 / span 12;
+    grid-row: 2 / span 12;
+    position: relative;
+    line-height: 1.3;
+  }
+}
