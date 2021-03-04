@@ -103,26 +103,26 @@ li {
   position: absolute;
   top: 100%;
   left: 40%;
-  transform: translateX(-75%);
+  transform: translateX(-20%);
   text-align: center;
   &__img {
     width: 80px;
-    height: 160px;
-    margin-top: -80px;
+    height: 150px;
+    margin: 0px auto;
   }
 
   &__caption {
     display: none;
     text-transform: uppercase;
     color: white;
-    font-size: 20px;
-    line-height: 1.8;
-
+    font-size: 23px;
+    line-height: 1.2;
     margin: 0px auto;
     text-align: center;
   }
   @include bp-med {
-    left: 9%;
+    top: 20%;
+    left: 3%;
     &__image {
     }
     &__caption {
@@ -342,12 +342,13 @@ li {
       grid-row: 1 / span 1;
       font-size: 48px;
       margin-bottom: 40px;
+      padding: 20px;
     }
     &__line {
       display: block;
       min-height: 40px;
       width: 4px;
-      margin-left: 90px;
+      margin-left: 60px;
       grid-column: 3 / span 3;
       grid-row: 2 / span 3;
       background-color: $green;
@@ -406,7 +407,7 @@ li {
   background-size: cover;
   color: $green;
   &__header {
-    font-family: $head-font;
+    font-family: "Pacifico", cursive;
     margin-bottom: 20px;
     padding-top: 20px;
   }
