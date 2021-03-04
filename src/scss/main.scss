@@ -23,9 +23,9 @@ Usage: partial-name.variable/mixin/function-name:
 background: variables.$primary-color;
 */
 
-@use 'reset';
-@use 'variables';
-@use 'mixins';
+@import "reset";
+@import "variables";
+@import "mixins";
 
 /* Main Layout ================================= */
 
@@ -106,7 +106,6 @@ li {
     width: 80px;
     height: 176px;
     margin-top: 80px;
-    filter: brightness(0) invert(1);
     margin: 0px auto;
   }
 
@@ -218,6 +217,14 @@ li {
   &__caption {
     margin-top: 20px;
     font-size: 20px;
+  }
+  @include bp-med {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25rem;
+    &__header {
+      font-size: 176px;
+    }
   }
 }
 
