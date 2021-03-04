@@ -200,8 +200,14 @@ li {
 }
 
 .btn {
+	font-size: 16px;
 	padding: 10px;
 	border: solid 1px #1b846f;
+}
+
+.btn:hover {
+	background-color: #1b846f;
+	color: white;
 }
 
 /* Nav ================================= */
@@ -310,6 +316,10 @@ li {
 	color: #1b846f;
 }
 
+.nav-holder__link:hover {
+	color: #1b846f;
+}
+
 @media screen and (min-width: 768px) {
 	.nav-holder {
 		display: block;
@@ -398,7 +408,7 @@ li {
 	display: grid;
 	grid-template-columns: 1fr repeat(12, 1fr) 1fr;
 	grid-template-rows: 1fr repeat(12, 1fr) 1fr;
-	height: 70vh;
+	height: 80vh;
 	width: 100vw;
 	color: #1b846f;
 	background: #febc32;
@@ -419,29 +429,54 @@ li {
 	background: white;
 	text-align: center;
 	grid-column: 3 / span 11;
-	grid-row: 3 / span 10;
+	grid-row: 3 / span 12;
 	position: relative;
 	line-height: 1.3;
+	padding-bottom: 20px;
 }
 
 .about__header {
 	font-family: "Pacifico", cursive;
+	padding: 20px;
 }
 
 .about__text {
-	line-height: 1.7;
+	line-height: 1.3;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.about {
+		height: 100vh;
+	}
+	.about__bg {
+		grid-column: 4 / span 6;
+		grid-row: 2 / span 12;
+	}
+	.about__content {
+		grid-column: 5 / span 8;
+		grid-row: 4 / span 8;
+	}
 }
 
 /* Gallery ================================= */
 .gallery__holder {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 	grid-auto-rows: auto;
 	gap: 25px;
 	padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.gallery__holder {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 50px;
+		margin: 20px;
+	}
 }
 
 .gallery__img {
@@ -458,7 +493,7 @@ li {
 	display: grid;
 	grid-template-columns: 1fr repeat(12, 1fr) 1fr;
 	grid-template-rows: 1fr repeat(12, 1fr) 1fr;
-	height: 70vh;
+	height: 80vh;
 	width: 100vw;
 	/*bg*/
 	background-image: url(/src/img/catering_img.jpg);
@@ -474,16 +509,19 @@ li {
 	line-height: 1.7;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	font-size: 18px;
 }
 
 .catering__content {
 	background: white;
-	border-radius: 6%;
+	border-radius: 3%;
 	text-align: center;
 	grid-column: 2 / span 12;
-	grid-row: 2 / span 12;
+	grid-row: 2 / span 13;
+	margin-bottom: 20px;
 	position: relative;
+	padding: 10px;
 	line-height: 1.3;
 }
 

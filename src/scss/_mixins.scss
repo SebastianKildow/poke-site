@@ -9,9 +9,3 @@
     @content;
   }
 }
-
-@mixin bp-large {
-  @media screen and (min-width: $breakpoint-desktop) {
-    @content;
-  }
-}
