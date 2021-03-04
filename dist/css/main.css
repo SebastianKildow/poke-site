@@ -89,25 +89,26 @@ li {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 170%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 140%;
+	left: 40%;
+	transform: translateX(-50%);
 }
 
 .logo__img {
-	background: url(../img/logo.png);
-	background-size: cover;
-	background-position: center;
 	width: 80px;
 	height: 176px;
-	margin-top: -8px;
+	margin-top: 80px;
+	-webkit-filter: brightness(0) invert(1);
+	        filter: brightness(0) invert(1);
+	margin: 0px auto;
 }
 
 .logo__caption {
 	margin-top: -28px;
 	text-transform: uppercase;
 	color: white;
-	transform: scale(1, 1.1);
+	margin-top: 20px;
+	font-size: 28px;
 	line-height: 1.2;
 }
 
