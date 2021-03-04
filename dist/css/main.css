@@ -413,7 +413,6 @@ li {
 /* About ================================= */
 .about {
 	display: grid;
-	/* Felt like better sizing */
 	grid-template-columns: 1fr repeat(12, 1fr) 1fr;
 	grid-template-rows: 1fr repeat(12, 1fr) 1fr;
 	color: #1b846f;
@@ -480,13 +479,12 @@ li {
 		grid-row: 1 / span 1;
 		font-size: 48px;
 		margin-bottom: 40px;
-		padding: 20px;
 	}
 	.about__line {
 		display: block;
 		min-height: 40px;
 		width: 4px;
-		margin-left: 60px;
+		margin-left: 90px;
 		grid-column: 3 / span 3;
 		grid-row: 2 / span 3;
 		background-color: #1b846f;
