@@ -103,26 +103,26 @@ li {
   position: absolute;
   top: 100%;
   left: 40%;
-  transform: translateX(-20%);
+  transform: translateX(-75%);
   text-align: center;
   &__img {
     width: 80px;
-    height: 150px;
-    margin: 0px auto;
+    height: 160px;
+    margin-top: -80px;
   }
 
   &__caption {
     display: none;
     text-transform: uppercase;
     color: white;
-    font-size: 23px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.8;
+
     margin: 0px auto;
     text-align: center;
   }
   @include bp-med {
-    top: 20%;
-    left: 3%;
+    left: 9%;
     &__image {
     }
     &__caption {
@@ -277,8 +277,11 @@ li {
 /* About ================================= */
 .about {
   display: grid;
+
+  /* Felt like better sizing */
   grid-template-columns: 1fr repeat(12, 1fr) 1fr;
   grid-template-rows: 1fr repeat(12, 1fr) 1fr;
+
   color: $green;
   background: $yellow;
   height: 80vh;
@@ -292,7 +295,6 @@ li {
     background-position: center;
     grid-column: 2 / span 11;
     grid-row: 2 / span 10;
-
     border: white solid 10px;
   }
 
@@ -307,7 +309,7 @@ li {
   }
 
   &__header {
-    font-family: "Pacifico", cursive;
+    font-family: $head-font;
     padding-top: 20px;
   }
 
@@ -404,7 +406,7 @@ li {
   background-size: cover;
   color: $green;
   &__header {
-    font-family: "Pacifico", cursive;
+    font-family: $head-font;
     margin-bottom: 20px;
     padding-top: 20px;
   }
