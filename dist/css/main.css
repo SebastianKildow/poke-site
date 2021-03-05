@@ -228,13 +228,12 @@ li {
 	flex-direction: column;
 	position: absolute;
 	top: 100%;
-	left: 40%;
+	left: 35%;
 	transform: translateX(-20%);
 	text-align: center;
 }
 
 .logo__img {
-	width: 80px;
 	height: 150px;
 	margin: 0px auto;
 }
@@ -245,18 +244,16 @@ li {
 	color: white;
 	font-size: 23px;
 	line-height: 1.2;
-	margin: 0px auto;
 	text-align: center;
 }
 
 @media screen and (min-width: 768px) {
 	.logo {
 		top: 20%;
-		left: 3%;
+		left: 2%;
 	}
 	.logo__caption {
 		display: block;
-		margin-left: 40px;
 		font-family: "Noto Sans", sans-serif;
 		font-weight: lighter;
 	}
@@ -484,7 +481,7 @@ li {
 		display: block;
 		min-height: 40px;
 		width: 4px;
-		margin-left: 90px;
+		margin-left: 45px;
 		grid-column: 3 / span 3;
 		grid-row: 2 / span 3;
 		background-color: #1b846f;
@@ -526,6 +523,12 @@ li {
 	   object-position: center;
 	width: 100%;
 	max-height: 100%;
+	transition: 1s ease;
+}
+
+.gallery__img:hover {
+	-webkit-filter: blur(5px);
+	transition: 1s ease;
 }
 
 /* Catering ================================= */
@@ -561,7 +564,7 @@ li {
 	border-radius: 3%;
 	text-align: center;
 	grid-column: 2 / span 10;
-	grid-row: 2 / span 8;
+	grid-row: 2 / span 10;
 	margin-bottom: 20px;
 	position: relative;
 	padding-bottom: 10px;
