@@ -429,9 +429,8 @@ li {
     height: 100vh;
 
     &__content {
-      grid-column: 4 / span 6;
-      grid-row: 4 / span 6;
-      min-height: fit-content;
+      grid-column: 3 / span 7;
+      grid-row: 3 / span 7;
     }
   }
 }
